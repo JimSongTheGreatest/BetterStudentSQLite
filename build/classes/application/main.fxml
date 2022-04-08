@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.buttonController">
+   <children>
+      <ImageView fitHeight="606.0" fitWidth="1032.0" layoutX="-2.0" layoutY="-4.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <!-- <Image url="@../../../../../Desktop/apple.jpeg" /> -->
+            <Image url="@resources/apple.jpeg" />            
+         </image>
+      </ImageView>
+      <Button layoutX="293.0" layoutY="154.0" mnemonicParsing="false" onAction="#handleSleep" prefHeight="27.0" prefWidth="210.0" style="-fx-background-color: #B513D3;" text="Sleep Hours">
+         <font>
+            <Font name="Lucida Fax Regular" size="18.0" />
+         </font></Button>
+      <Button layoutX="293.0" layoutY="197.0" mnemonicParsing="false" onAction="#handleEating" prefHeight="27.0" prefWidth="210.0" style="-fx-background-color: #7BFE45;" text="Eating Habits">
+         <font>
+            <Font name="Lucida Fax Regular" size="18.0" />
+         </font>
+      </Button>
+      <Button layoutX="293.0" layoutY="239.0" mnemonicParsing="false" onAction="#handleStudy" prefHeight="27.0" prefWidth="210.0" style="-fx-background-color: #FF3BC9;" text="Study Hours">
+         <font>
+            <Font name="Lucida Fax Regular" size="18.0" />
+         </font>
+      </Button>
+      <Button layoutX="293.0" layoutY="280.0" mnemonicParsing="false" onAction="#handleGpa" prefHeight="27.0" prefWidth="210.0" style="-fx-background-color: #3B5AFF;" text="GPA Score">
+         <font>
+            <Font name="Lucida Fax Regular" size="18.0" />
+         </font>
+      </Button>
+      <Button layoutX="293.0" layoutY="347.0" mnemonicParsing="false" onAction="#handleSummary" prefHeight="27.0" prefWidth="210.0" style="-fx-background-color: FF3B3B;" text="Summary">
+         <font>
+            <Font name="Lucida Fax Regular" size="18.0" />
+         </font>
+      </Button>
+      <Label layoutX="28.0" layoutY="49.0" text="Welcome Better Student!">
+         <font>
+            <Font size="48.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#00ff9c" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <Button layoutX="293.0" layoutY="488.0" mnemonicParsing="false" onAction="#deleteAccount" prefHeight="27.0" prefWidth="210.0" style="-fx-background-color: #FF0000;" text="Delete Account">
+         <font>
+            <Font name="Lucida Fax Regular" size="18.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
