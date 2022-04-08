@@ -1,6 +1,6 @@
 # BetterStudent
 
-Using Java, SQL, and JavaFx
+Using Java, SQLite, and JavaFx
 
 Our program features
 
@@ -16,21 +16,80 @@ Our program features
 ```html
 .
 ├── README.md
-├── Screen-Shot-2019-02-19-at-7.52.02-PM.png
-├── bin
+├── build
+│   └── classes
+│       └── application
+│           ├── Database.class
+│           ├── Main.class
+│           ├── MealsEaten.class
+│           ├── SummaryController.class
+│           ├── TimeSlept.class
+│           ├── TimeStudied.class
+│           ├── User.class
+│           ├── application.css
+│           ├── buttonController.class
+│           ├── eating.fxml
+│           ├── gpa.fxml
+│           ├── logIn.fxml
+│           ├── main.fxml
+│           ├── resources
+│           │   ├── EAT1.jpg
+│           │   ├── GPA1 (1).jpg
+│           │   ├── Loggin (1).jpeg
+│           │   ├── SLEEP (1).jpg
+│           │   ├── SLEEP1.jpg
+│           │   ├── STUDY.jpg
+│           │   ├── SUM.jpg
+│           │   ├── apple.jpeg
+│           │   ├── eatchart1.jpg
+│           │   ├── gpachart.jpg
+│           │   ├── sleepchart.png
+│           │   ├── studychart1.png
+│           │   ├── sumchart.jpg
+│           │   └── summary.jpg
+│           ├── signup.fxml
+│           ├── sleep.fxml
+│           ├── study.fxml
+│           ├── studychart1.png
+│           └── summary.fxml
+├── build.fxbuild
+├── build.xml
+├── empty.txt
+├── manifest.mf
+├── mysql-connector-java-8.0.16.jar
+├── nbproject
+│   ├── build-impl.xml
+│   ├── genfiles.properties
+│   ├── private
+│   │   ├── private.properties
+│   │   └── private.xml
+│   ├── project.properties
+│   └── project.xml
+├── requirements.txt
+├── sms.db
+├── sms.db.sql
+├── sms.sqbpro
+├── sqlite-jdbc-3.36.0.3.jar
+├── src
 │   └── application
-│       ├── Main.class
+│       ├── Database.java
+│       ├── Main.java
+│       ├── MealsEaten.java
+│       ├── SummaryController.java
+│       ├── TimeSlept.java
+│       ├── TimeStudied.java
+│       ├── User.java
 │       ├── application.css
-│       ├── buttonController.class
+│       ├── buttonController.java
 │       ├── eating.fxml
 │       ├── gpa.fxml
 │       ├── logIn.fxml
 │       ├── main.fxml
 │       ├── resources
 │       │   ├── EAT1.jpg
-│       │   ├── GPA1\ (1).jpg
-│       │   ├── Loggin\ (1).jpeg
-│       │   ├── SLEEP\ (1).jpg
+│       │   ├── GPA1 (1).jpg
+│       │   ├── Loggin (1).jpeg
+│       │   ├── SLEEP (1).jpg
 │       │   ├── SLEEP1.jpg
 │       │   ├── STUDY.jpg
 │       │   ├── SUM.jpg
@@ -41,82 +100,23 @@ Our program features
 │       │   ├── studychart1.png
 │       │   ├── sumchart.jpg
 │       │   └── summary.jpg
+│       ├── signup.fxml
 │       ├── sleep.fxml
 │       ├── study.fxml
 │       ├── studychart1.png
 │       └── summary.fxml
-├── build.fxbuild
-├── requirements.txt
-└── src
-    └── application
-        ├── Main.java
-        ├── application.css
-        ├── buttonController.java
-        ├── eating.fxml
-        ├── gpa.fxml
-        ├── logIn.fxml
-        ├── main.fxml
-        ├── resources
-        │   ├── EAT1.jpg
-        │   ├── GPA1\ (1).jpg
-        │   ├── Loggin\ (1).jpeg
-        │   ├── SLEEP\ (1).jpg
-        │   ├── SLEEP1.jpg
-        │   ├── STUDY.jpg
-        │   ├── SUM.jpg
-        │   ├── apple.jpeg
-        │   ├── eatchart1.jpg
-        │   ├── gpachart.jpg
-        │   ├── sleepchart.png
-        │   ├── studychart1.png
-        │   ├── sumchart.jpg
-        │   └── summary.jpg
-        ├── sleep.fxml
-        ├── study.fxml
-        ├── studychart1.png
-        └── summary.fxml
+└── test
+
+10 directories, 81 files
+
 ```
 
 ### Project Set-Up requirements
 ```HTML
-Settings:
-IDE: Eclipse
 
 Java1.8.202
 mysql-connector-java-8.0.16.jar - BetterStudent
 JavaFX
-Database: SQL, XAMPP, Apache
-```
-```HTML
-Instruction For Windows:
-Click start button next to Apache and MySQL
-  Copy the link http://localhost/phpmyadmin/index.php?route=/sql&server=1&db=sms&table=users&pos=0 and past it in url
-  Click "New" on the left panel
-    type "sms" in database name and click "Create"
-      Now you are at empty db so now we click "import" on top panels
-        Click Choose File
-          Find sms.sql file within base directory of our project.
-            Make sure you click "Go" on the right below to proceed.
-              Now you should see forms for database is created
-Then you just run on main.java in any IDE (i.e Eclipse)
+Database: SQLite
 
-
-
-Instruction For Mac:
-First check the settings above,
-Second, install and run XAMPP
-  Direct to "Manage Server"
-    Start MySQL Database
-      Start Apache Web Server
-Back to "Welcome" and click "Go to Application"]
-    On URL type: http://localhost/phpmyadmin/index.php?route=/sql&server=1&db=sms&table=users&pos=0
-  Here you should see localhost through phpMyAdmin
-    Click "New" on the left panel
-      type "sms" and click "Create"
-        Now you are at empty db so now we click "import" on top panels
-          Click Choose File
-            Find sms.sql file within base directory of our project.
-              Make sure you click "Go" on the right below to proceed.
-                Now you should see forms for database is created
-Then you just run on main.java in any IDE (i.e Eclipse)
 ```
